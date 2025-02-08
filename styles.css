@@ -1,0 +1,386 @@
+/* Reset */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 121, 107, 0.95); /* Transparan hijau */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+}
+
+.nav-links.active {
+    right: 0; /* Menu muncul saat active */
+}
+
+.nav-links ul {
+    margin-top: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #2eb48c;
+}
+
+.menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-icon {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+/* Responsif untuk Tablet dan Lebih Besar */
+@media (min-width: 768px) {
+    .nav-links {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        height: auto;
+        width: auto;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links li a {
+        color: white;
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .close-icon {
+        display: none;
+    }
+}
+
+  
+  /* Main Content */
+  main {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00796b;
+  }
+  @media (max-width: 340px){
+    main h1 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 375px){
+    main h1 {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 4255px){
+    main h1 {
+      font-size: 1.8rem;
+    }
+  }
+/* Daftar Kitab */
+.kitab-section {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .kitab-section h2 {
+    font-size: 1.8rem;
+    color: #00796b;
+    margin-bottom: 20px;
+  }
+  
+  .kitab-list {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .kitab-list li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Tombol WhatsApp */
+  .whatsapp-button {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1ebe57;
+  }
+  .btn-masuk {
+    background: linear-gradient(45deg, #00796b, #004d40);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+.btn-masuk a {
+  color: #f4f4f9;
+  text-decoration: none;
+}
+.btn-masuk:hover {
+    background: linear-gradient(45deg, #004d40, #00796b);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-masuk:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.divtable h1 {
+  color: #00796b;
+}
+.daftar-isi .h1-daftarIsi {
+  color: rgb(23, 23, 99);
+}
+/*BAGIAN FOOUTER*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+	line-height: 1.5;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 800px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ul-ft{
+	list-style: none;
+}
+.footer {
+  background-color: #eaeaea;
+  padding: 70px 0;
+}
+.dark-mode .footer{
+	background-color: #202c33;/*#3E8DA8 #075e54*/
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   text-align: left;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #000000;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.dark-mode .footer-col h4 {
+  color: #ffffff;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #009788;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+} 
+.dark-mode .footer-col h4::before {
+  background-color: #e91e63;
+}
+.footer-col .ul-ft .li-ft:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col .p-information:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col .ul-ft .li-ft a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #000000;
+	text-decoration: none;
+	font-weight: 300;
+	color: #000000;
+	display: block;
+	transition: all 0.3s ease;
+}
+.dark-mode .footer-col .ul-ft .li-ft a {
+  color: #ffffff;
+  color: #bbbbbb;
+}
+.footer-col .p-information {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #000000;
+	text-decoration: none;
+	font-weight: 300;
+	color: #000000;
+	display: block;
+	transition: all 0.3s ease;
+}
+.dark-mode .footer-col .p-information {
+  color:#ffffff;
+  color:#bbbbbb;
+}
+.footer-col .a-information{
+  color: #000000;
+  text-decoration: none;
+}
+.dark-mode .footer-col .a-information {
+  color: #bbbbbb;
+}
+.footer-col .ul-ft .li-ft a:hover{
+	color: #000000;
+	padding-left: 8px;
+}
+.dark-mode .footer-col .ul-ft .li-ft a:hover {
+  color: #ffffff;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(155,155,155,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #000000;
+	transition: all 0.5s ease;
+}
+.dark-mode .footer-col .social-links a {
+  background-color: rgba(255,255,255,0.2);
+  color: #ffffff;
+}
+.footer-col .social-links a:hover{
+	color: #ffffff;
+	background-color: #009788;
+}
+.dark-mode .footer-col .social-links a:hover {
+  color: #212121;
+  background-color: #ffffff;
+}
+.copyright-pustka {
+  color: #000000;
+}
+.dark-mode .copyright-pustka {
+  color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/*BAGIAN FOOUTER SAMPAI SINI*/
